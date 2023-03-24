@@ -5,6 +5,8 @@ const csvFile = "./data/titanic.csv"; // dataset
 const trainingLabel = "Survived"; // x.csv kolomnaam = gender
 const ignoredColumns = ["SibSp"]; // genegeerde kolom
 
+let survivorHeading = document.getElementById("survivor");
+
 // Gebruik Papi Parse om 1 van de datasets te laden
 function loadData() {
   Papa.parse(csvFile, {
@@ -41,7 +43,9 @@ function predictor(decisionTree, person) {
   console.log(
     `${person.Name} is gonna ${prediction === "1" ? "survive" : "die"}`
   );
-  console.log("Fuck, my ankle!");
+  survivorHeading.innerText = `${person.Name} is gonna ${
+    prediction === "1" ? "survive" : "die"
+  }`;
   visualizer(decisionTree);
 }
 
