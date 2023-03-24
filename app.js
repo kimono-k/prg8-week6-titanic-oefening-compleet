@@ -1,7 +1,3 @@
-/**
- * TODO: Voorspel of iemand zijn vakantie op de titanic gaat overleven
- */
-
 import { DecisionTree } from "./libraries/decisiontree.js";
 import { VegaTree } from "./libraries/vegatree.js";
 
