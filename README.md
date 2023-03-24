@@ -2,7 +2,7 @@
 
 - Een algoritme die een hierarchische boomstructuur maakt om te bepalen wat het belangrijkst is in een dataset.
 
-# Classificcation
+# Classification
 
 - Array data een label geven bijvoorbeeld "survived" of "died"
 
